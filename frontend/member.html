@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Member Search</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 30px;
+        }
+
+        input {
+            padding: 10px;
+            width: 250px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>ค้นหาสมาชิก</h2>
+
+    <input type="text" id="memid" placeholder="กรอกรหัสสมาชิก">
+
+    <button onclick="searchMember()">
+        ค้นหา
+    </button>
+
+    <div id="result"></div>
+
+    <script src="./js/member.js"></script>
+
+</body>
+
+</html>
