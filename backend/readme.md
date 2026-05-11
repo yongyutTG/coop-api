@@ -80,13 +80,6 @@ Repository
 SQL Server
 
 
-
-http://localhost/coop-api/frontend/member.html
-หรือ  
-ใช้ Forward aPort ของ vs code 
-ออกเน็ต https://m162djw5-80.asse.devtunnels.ms/coop-api/frontend/member.html
-หรือใช้ Ngrok   โดยรัน Ngrok.exe ในไดร์ C: แล้ว พิมพ์คำสั่ง  Ngrok 3000 
-https://ab6c-2001-44c8-4021-e47a-ac3e-9af-b4bb-c6fa.ngrok-free.app/api/members/038036/full
 fornend
 -
 -
