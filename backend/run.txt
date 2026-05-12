@@ -11,12 +11,14 @@ PM2 วิธีการใช้งานและ คำสั่ง
     pm2 start ecosystem.config.js = รัน
     pm2 stop ecosystem.config.js = หยุด
     pm2 stop all = หยุดทุก service
+    npm install pm2-windows-startup -g  = ติดตั้งให้เปิดขึ้นอัตโนมัติ
+    pm2-startup install  = ติดตั้ง startup
+    pm2 startup = auto start after reboot
+    pm2 save = save การตั่งค่าทั้งหมด
     pm2 list  = ดู status
     pm2 logs  = ดู logs
     pm2 logs coop-api  ดูฉะเพราะ service
     pm2 restart all = restart ทุกอัน
     pm2 restart frontend-backend  = restart เฉพราะ service
-    pm2 save = save การตั่งค่า
-    pm2 startup = auto start after reboot
     pm2 monit = moniter
 
