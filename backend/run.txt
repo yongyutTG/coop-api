@@ -18,4 +18,5 @@ PM2 วิธีการใช้งานและ คำสั่ง
     pm2 restart frontend-backend  = restart เฉพราะ service
     pm2 save = save การตั่งค่า
     pm2 startup = auto start after reboot
+    pm2 monit = moniter
 

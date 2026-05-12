@@ -4,7 +4,7 @@ module.exports = {
 
     // BACKEND API
     {
-      name: 'coop-api',
+      name: 'backend-coop-api',
 
       script: './backend/server.js',
 
