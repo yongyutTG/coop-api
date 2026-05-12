@@ -5,3 +5,17 @@ http://localhost/coop-api/frontend/member.html
 ออกเน็ต https://m162djw5-80.asse.devtunnels.ms/coop-api/frontend/member.html
 หรือใช้ Ngrok   โดยรัน Ngrok.exe ในไดร์ C: แล้ว พิมพ์คำสั่ง  Ngrok 3000 
 https://ab6c-2001-44c8-4021-e47a-ac3e-9af-b4bb-c6fa.ngrok-free.app/api/members/038036/full
+
+
+PM2 วิธีการใช้งานและ คำสั่ง
+    pm2 start ecosystem.config.js = รัน
+    pm2 stop ecosystem.config.js = หยุด
+    pm2 stop all = หยุดทุก service
+    pm2 list  = ดู status
+    pm2 logs  = ดู logs
+    pm2 logs coop-api  ดูฉะเพราะ service
+    pm2 restart all = restart ทุกอัน
+    pm2 restart frontend-backend  = restart เฉพราะ service
+    pm2 save = save การตั่งค่า
+    pm2 startup = auto start after reboot
+

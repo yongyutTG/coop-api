@@ -10,13 +10,7 @@ async function searchMember() {
     try {
 
        const response = await fetch(
-            `http://localhost:3000/api/members/${memid}/full`,{
-                
-                method: 'GET',
-                headers: {
-                    'x-api-key': '123TGsaving'
-                }
-            }
+             `http://localhost:4000/api/members/${memid}/full`
         );
 
         const result = await response.json();

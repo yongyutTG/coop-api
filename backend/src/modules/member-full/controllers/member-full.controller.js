@@ -42,38 +42,3 @@ exports.getMemberFull = async (req, res) => {
         });
     }
 };
-
-// exports.getMemberFullProxy = async (req, res) => {
-//     try {
-//         const id = req.params.id;
-//         console.log('getMemberFullProxy called with id:', id); // DEBUG
-        
-//         // ตรวจสอบ
-//         if (!/^\d+$/.test(id) || id.length !== 6) {
-//             return res.status(400).json({
-//                 status: 'error',
-//                 message: 'ข้อมูลไม่ถูกต้อง'
-//             });
-//         }
-
-//         // Backend ใช้ API key ที่ซ่อนไว้
-//         const response = await fetch(
-//             `http://localhost:3000/api/members/${id}/full`,
-//             {
-//                 method: 'GET',
-//                 headers: {
-//                     'x-api-key': '123TGsaving'
-//                 }
-//             }
-//         );
-
-//         const data = await response.json();
-//         res.json(data);
-
-//     } catch (err) {
-//         res.status(500).json({
-//             status: 'error',
-//             message: err.message
-//         });
-//     }
-// };
