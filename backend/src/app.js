@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 const memberRoute = require('./modules/member-full/routes/member-full.route');
 //protect API
-app.use('/api', validateApiKey);
+//app.use('/api', validateApiKey);
 app.use('/api/members', memberRoute);
 const rateLimit = require('express-rate-limit');
 const limiter = rateLimit({
