@@ -1,13 +1,6 @@
 const { sql, pool } = require('../../../config/db');
-
-
-// =============================
-// CHECK MEMBER EXISTS
-// =============================
 exports.checkMemberExists = async (memid) => {
-
     const db = await pool;
-
     const result = await db.request()
         .input('mem_id', sql.VarChar, memid)
         .query(`
@@ -15,18 +8,11 @@ exports.checkMemberExists = async (memid) => {
             FROM mem_h_member
             WHERE mem_id = @mem_id
         `);
-
     return result.recordset[0] || null;
 };
 
-
-// =============================
-// MEMBER by memid full DETAIL
-// =============================
 exports.getMemberById = async (memid) => {
-
     const db = await pool;
-
     const result = await db.request()
         .input('mem_id', sql.VarChar, memid)
         .query(`
@@ -65,18 +51,11 @@ exports.getMemberById = async (memid) => {
             WHERE v.shr_sum_bth > 0
             AND m.mem_id = @mem_id
         `);
-
     return result.recordset[0] || null;
 };
 
-
-// =============================
-// SAVING
-// =============================
 exports.getSavingAccounts = async (memid) => {
-
     const db = await pool;
-
     const result = await db.request()
         .input('mem_id', sql.VarChar, memid)
         .query(`
@@ -95,14 +74,8 @@ exports.getSavingAccounts = async (memid) => {
     return result.recordset;
 };
 
-
-// =============================
-// LOANS
-// =============================
 exports.getLoans = async (memid) => {
-
     const db = await pool;
-
     const result = await db.request()
         .input('mem_id', sql.VarChar, memid)
         .query(`
@@ -139,14 +112,8 @@ exports.getLoans = async (memid) => {
     return result.recordset;
 };
 
-
-// =============================
-// STOCK
-// =============================
 exports.getStocks = async (memid) => {
-
     const db = await pool;
-
     const result = await db.request()
         .input('mem_id', sql.VarChar, memid)
         .query(`
@@ -157,6 +124,5 @@ exports.getStocks = async (memid) => {
             FROM shr_mem
             WHERE mem_id = @mem_id
         `);
-
     return result.recordset;
 };
