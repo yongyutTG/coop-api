@@ -5,7 +5,6 @@ const app = express();
 
 app.set('trust proxy', 1);
 const validateApiKey = require('./middlewares/apiKey');
-
 app.use(cors());
 app.use(express.json());
 
